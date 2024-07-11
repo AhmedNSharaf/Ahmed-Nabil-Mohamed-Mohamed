@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: myTheme, // Apply the custom theme here
-      home: Questions(),
+      home: LandingScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
