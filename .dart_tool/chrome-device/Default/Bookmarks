@@ -1,0 +1,69 @@
+{
+   "checksum": "f6c14f3d3a03ff466b293b5f5c78b10a",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13364939399286751",
+            "date_last_used": "0",
+            "guid": "ef60991f-83d2-4250-85aa-e5ce8b2743c9",
+            "id": "9",
+            "name": "Amazon.co.uk - Online Shopping",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "http://www.amazon.com/gp/ubp/oneButton/config/redirectHome?tagbase=hpbk-ubpl&ref=aagateway-edgebook-hp"
+         }, {
+            "date_added": "13364939399286644",
+            "date_last_used": "0",
+            "guid": "8f36bd63-4011-4caf-a523-af5e52443976",
+            "id": "8",
+            "name": "Booking.com",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=booking&c=232&locale=*&pf=*&tp=edge&TYPE=3"
+         }, {
+            "date_added": "13364939399286116",
+            "date_last_used": "0",
+            "guid": "1f0b9e79-be27-448f-8c23-8a5fcf5b6d2b",
+            "id": "7",
+            "name": "McAfee Security",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.mcafee.com/consumer/v/browserfav/hp.html"
+         } ],
+         "date_added": "13364939399083603",
+         "date_last_used": "0",
+         "date_modified": "13365001854964618",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favourites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13364939399083606",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favourites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13364939399083608",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favourites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
