@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task3/screens/login_screen.dart';
+import 'package:task3/utils/colors.dart';
 import 'package:task3/utils/images_name.dart';
 
 class LandingScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class LandingScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(background),  
+            image: AssetImage(background),
             fit: BoxFit.cover,
           ),
         ),
@@ -50,12 +51,12 @@ class LandingScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) {
-                      return const login();
+                      return Login();
                     }),
                   );
                 },
                 style: ButtonStyle(
-                  backgroundColor: WidgetStateProperty.all(Colors.green),
+                  backgroundColor: WidgetStateProperty.all(secondaryColor),
                   minimumSize: WidgetStateProperty.all(const Size(350, 50)),
                   shape: WidgetStateProperty.all(RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -63,7 +64,10 @@ class LandingScreen extends StatelessWidget {
                 ),
                 child: const Text(
                   "Start",
-                  style: TextStyle(fontSize: 20, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: primaryColor,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
             ),
