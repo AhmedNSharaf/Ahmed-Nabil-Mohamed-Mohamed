@@ -1,40 +1,82 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:task3/screens/category.dart';
-import 'package:task3/screens/landing_screen.dart';
-import 'package:task3/screens/questions.dart';
-import 'package:task3/screens/score.dart';
-import 'package:task3/utils/colors.dart';
+import 'package:flutter/foundation.dart';
+import 'package:task6/screens/custom_buttons_cubit.dart';
+import 'package:task6/screens/custom_buttons_state.dart';
+import 'package:task6/screens/fast_filter_bar_setstate.dart';
+import 'package:task6/screens/radioButtons.dart';
+import 'package:task6/screens/fast_filter_bar_cubit.dart';
+import 'package:task6/screens/password_hide.dart';
+// this for filter bar using cubit...(task 1 )
 
-// Define your custom theme (adjust properties to your preferences)
-final ThemeData myTheme = ThemeData(
-  primaryColor: primaryColor, // Main color of the app
-  hintColor: Colors.black, // Secondary color
-  textTheme: TextTheme(
-    bodyLarge:
-        TextStyle(fontSize: 16.0, color: Colors.black), // Body text style
-  ),
-  appBarTheme: AppBarTheme(
-    color: primaryColor, // App bar color
-  ),
-  // ...other theme properties (optional)
-);
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('Fast Filter Bar'),
+//         ),
+//         body: Center(
+//           child: FastFilterBarUsingCubit(
+//             items: ['تمت', 'تحت المراجعة', 'المكتملة', 'المعلقة', 'قيد التفيذ'],
+//           ),
+//         ),
+//       ),
+//     ),
+//   );
+// }
 
-void main() {
-  runApp(MyApp());
-}
+//this is for filter bar using setstate...
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text('Fast Filter Bar using state'),
+//         ),
+//         body: Center(
+//           child: FastFilterBarUsingState(
+//             items: const [
+//               'قيد التفيذ',
+//               'المعلقة',
+//               'المكتملة',
+//               'تحت المراجعة',
+//               'تمت'
+//             ],
+//             onItemTap: (item) {
+//               if (kDebugMode) {
+//                 print('Selected item: $item');
+//               }
+//             },
+//           ),
+//         ),
+//       ),
+//     ),
+//   );
+// }
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: myTheme, // Apply the custom theme here
-      home: LandingScreen(),
+// this for password_hide...
+
+// void main() {
+//   runApp(const PasswordHidden());
+// }
+
+// this for radio...
+
+// void main() {
+//   runApp(MaterialApp(
+//     home: RadioSelectionScreen(),
+//   ));
+// }
+
+// this for custom button. using state..
+
+// void main(){
+//   runApp(options());
+// }
+
+// this for custom button. using cubit ...
+void main() => runApp(MaterialApp(
+      home: options(),
       debugShowCheckedModeBanner: false,
-    );
-  }
-}
+    ));
